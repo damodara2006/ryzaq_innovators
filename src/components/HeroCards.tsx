@@ -52,7 +52,7 @@ export const HeroCards = () => {
 
         <CardContent className="text-center pb-2">
           <p>
-           Step into the future with Quantum & Nanotech 🌍
+          LiFi uses quantum light for fast, secure wireless communication. ⚡💡
           </p>
         </CardContent>
 

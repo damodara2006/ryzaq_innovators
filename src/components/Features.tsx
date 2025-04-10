@@ -1,4 +1,5 @@
 import { Badge } from "./ui/badge";
+import AOS from 'aos'
 import {
   Card,
   CardContent,
@@ -9,6 +10,7 @@ import {
 import image from "../assets/growth.png";
 import image3 from "../assets/reflecting.png";
 import image4 from "../assets/looking-ahead.png";
+import { useEffect } from "react";
 
 interface FeatureProps {
   title: string;
@@ -18,21 +20,21 @@ interface FeatureProps {
 
 const features: FeatureProps[] = [
   {
-    title: "Quantum-Powered Innovation",
+    title: "Quantum-Powered LiFi Innovation",
     description:
-      "Advancing quantum computing and sensing to revolutionize industries, from ultra-secure communications to high-speed data processing.",
+    "Advancing LiFi with quantum technology to revolutionize communication—ultra-secure, high-speed, and light-powered data transfer. 💡⚛️📶",
     image: image4,
   },
   {
-    title: "Next-Gen Nanotechnology",
+    title: "Next-Gen LiFi Technology ⚡",
     description:
-      "Engineering nanomaterials and devices for breakthroughs in semiconductors, medicine, and energy-efficient electronics.",
+      "Engineering nanomaterials and devices to power LiFi breakthroughs in communication 📡, connectivity 🔗, and energy-efficient data transfer 🔋💡✨.",
     image: image3,
   },
   {
     title: "Real-World Impact",
     description:
-      "Bridging the gap between theoretical research and commercial applications, shaping the future of AI, healthcare, and advanced materials.",
+      "Bridging the gap between LiFi research and real-world use 🌐, shaping the future of communication 📶, smart healthcare 🏥, and advanced tech materials ⚙️✨.",
     image: image,
   },
 ];
@@ -50,6 +52,9 @@ const featureList: string[] = [
 ];
 
 export const Features = () => {
+  useEffect(()=>{
+    AOS.init()
+  })
   return (
     <section
       id="features"
@@ -77,7 +82,7 @@ export const Features = () => {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {features.map(({ title, description, image }: FeatureProps) => (
-          <Card key={title}>
+          <Card key={title} data-aos="fade-left" data-aos-offset="100"  data-aos-duration="500">
             <CardHeader>
               <CardTitle>{title}</CardTitle>
             </CardHeader>

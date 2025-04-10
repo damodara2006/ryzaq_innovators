@@ -16,17 +16,17 @@ export const Hero = () => {
           </h1>{" "}
           for{" "}
           <h2 className="inline">
+          <br />
+
             <span className="inline bg-gradient-to-r from-[#61DAFB] via-[#1fc0f1] to-[#03a3d7] text-transparent bg-clip-text">
             Quantum innovation
             </span>{" "}
-            one atom at a time. ⚛️
+            <span>💡</span><span className="bg-gradient-to-r bg-green-300 to-green-400 text-transparent bg-clip-text"> Li-Fi </span>communication technology ⚛️
           </h2>
         </main>
 
-        <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
-        ⚛️ Step into the future with Quantum & Nanotech 🌍—where innovation happens at the atomic scale!
-
-🚀 Powering the next era of computing 🖥️, sensing 🎯, and advanced materials 🧪
+        <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0" >
+        ⚛️ Step into the future with LiFi & Quantum Visible Light 🌈—where data travels at the speed of light! 🚀 Harnessing quantum and nanotech at the atomic scale, LiFi transforms everyday LEDs 💡 into ultra-fast, secure data transmitters 📶. Powering the next era of communication 🌐, smart systems 🤖, and seamless connectivity 📲.
         </p>
 
         <div className="space-y-4 md:space-y-0 md:space-x-4">
@@ -35,7 +35,9 @@ export const Hero = () => {
           {/* <a
             rel="noreferrer noopener"
             href=""
-            target="_blank"
+            target="_blank"Quantum World
+
+
             className={`w-full md:w-1/3 ${buttonVariants({
               variant: "outline",
             })}`}

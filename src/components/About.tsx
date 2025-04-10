@@ -1,7 +1,12 @@
 // import { Statistics } from "./Statistics";
+import { useEffect } from "react";
 import pilot from "../assets/pilot.png";
+import AOS from "aos"
 
 export const About = () => {
+  useEffect(()=>{
+    AOS.init()
+  })
   return (
     <section
       id="about"
@@ -22,12 +27,8 @@ export const About = () => {
                 </span>
                 Company
               </h2>
-              <p className="text-xl text-muted-foreground mt-4">
-              At RYZAQ, we are redefining the future with breakthrough innovations in quantum mechanics and nanotechnology. ⚛️✨ Our mission is to push the boundaries of science, transforming cutting-edge research into real-world solutions that revolutionize computing, sensing, and advanced materials.
-
-With expertise in quantum computing, nanomaterials, and next-generation semiconductors, we develop technologies that drive progress across industries—from secure communication and ultra-fast processors to precision medical diagnostics. 🖥️🔬
-
-At RYZAQ, we don’t just follow the future—we create it. 🚀 Join us in shaping a world powered by quantum intelligence and nanoscale engineering!
+              <p className="text-xl text-muted-foreground mt-4" data-aosdata-aos="fade-left" data-aos-offset="100"  data-aos-duration="500">
+              LiFi with Quantum Visible Light 🌈💡 is an advanced communication technology that uses visible light instead of traditional radio waves to transmit data. By integrating quantum principles, it offers not only ultra-fast speeds ⚡ but also unbreakable security 🔐. This innovative method uses LEDs to send data through light pulses, which are too fast to be noticed by the human eye 👁️. Quantum encryption ensures that data remains secure and tamper-proof, making it ideal for sensitive environments like hospitals 🏥, military zones 🛡️, and financial systems 💰. LiFi is also energy-efficient 🔋 and reduces electromagnetic interference 📡, making it safer in areas where Wi-Fi may not be suitable. With the potential to connect smart devices in homes 🏠, schools 🎓, and industries 🏭, LiFi with quantum visible light is paving the way for a smarter, faster, and more secure digital future 🌐🚀. The future of communication is bright—literally! ✨📲
 
 
 

@@ -1,11 +1,18 @@
 import { LogoIcon } from "./Icons";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 export const Footer = () => {
+  useEffect(() => {
+    AOS.init(
+      );
+    AOS.refresh();
+  }, []);
   return (
     <footer id="footer">
       <hr className="w-11/12 mx-auto" />
 
-      <section className="container py-20 grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
+      <section className="container py-20 grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8" data-aos="fade-zoom-in" data-aos-offset="200" data-aos-duration="600">
         <div className="col-span-full xl:col-span-2">
           <a
             rel="noreferrer noopener"
@@ -13,7 +20,7 @@ export const Footer = () => {
             className="font-bold text-xl flex"
           >
             <LogoIcon />
-            Ryzaq
+           <span className="text-4xl bg-gradient-to-r from-pink-300 to-pink-500 text-transparent bg-clip-text " >Ryzaq</span>
           </a>
         </div>
 
